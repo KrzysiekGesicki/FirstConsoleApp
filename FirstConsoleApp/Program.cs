@@ -10,8 +10,9 @@ namespace FirstConsoleApp
     {
         static void Main(string[] args)
         {
-            string name1 = "Marek";
-            string name2 = "Ania";
+            
+            //string name1 = "Marek";
+            //string name2 = "Ania";
 
             //komentarz jednolinijkowy
 
@@ -56,6 +57,7 @@ namespace FirstConsoleApp
             string greeting = "      Hello World!       ";
             Console.WriteLine($"[{greeting}]");
 
+            //-----WYCINANIE STRINGÓW
             string trimmedGreeting = greeting.TrimStart();
             Console.WriteLine($"[{trimmedGreeting}]");
 
@@ -66,7 +68,7 @@ namespace FirstConsoleApp
             Console.WriteLine($"[{trimmedGreeting}]");
 
             Console.ReadLine();
-
+            //-----ZAMIANA / TOUPPER, TOLOWER
             string sayHello = "Hello World!";
             Console.WriteLine(sayHello);
             sayHello = sayHello.Replace("Hello", "Greetings");
@@ -79,6 +81,7 @@ namespace FirstConsoleApp
 
             Console.ReadLine();
 
+            //-----CZY ZAWIERA - CONTAINS - ZWRACA TRUE LUB FALSE
             string songLyrics = "You say goodbye, and I say hello";
             Console.WriteLine(songLyrics.Contains("goodbye"));
             Console.WriteLine(songLyrics.Contains("greetings"));
@@ -88,6 +91,7 @@ namespace FirstConsoleApp
             Console.WriteLine(songLyrics.EndsWith("hello"));
             Console.ReadLine();
 
+            //-----LICZBY
             int max = int.MaxValue;
             int min = int.MinValue;
             Console.WriteLine($"The range of integers is {min} to {max}");
@@ -121,6 +125,7 @@ namespace FirstConsoleApp
 
             Console.ReadLine();
             
+            //-----PRZYKLAD
             Console.WriteLine("Obliczanie pola okregu - podaj promien");
             double r = Convert.ToDouble(Console.ReadLine());
             double P = Math.PI * r*r;
@@ -149,23 +154,23 @@ namespace FirstConsoleApp
 
             Console.ReadLine();
             
-
-            var names = new List<string> { "<name>", "Ana", "Felipe" };
-            foreach (var name in names)
+            //-----LISTY
+            var namess = new List<string> { "<name>", "Ana", "Felipe" };
+            foreach (var name in namess)
             {
                 Console.WriteLine($"Hello {name.ToUpper()}!");
             }
-            names.Add("Maria");
-            names.Add("Bill");
-            names.Remove("Ana");
+            namess.Add("Maria");
+            namess.Add("Bill");
+            namess.Remove("Ana");
 
-            names.Sort();
-            foreach (var name in names)
+            namess.Sort();
+            foreach (var name in namess)
             {
                 Console.WriteLine($"Hello {name.ToUpper()}!");
             }
-            */
-
+            
+            //-----CIĄG FIBONACCIEGO
             var fibonacciNumbers = new List<int>{};
 
             for (int i = 1;i <= 20; i++)
@@ -186,6 +191,12 @@ namespace FirstConsoleApp
                 licznik++;
             }
                 
+            Console.ReadLine();
+            */
+
+            var a;
+            a = 1;
+            Console.WriteLine(a);
             Console.ReadLine();
 
 
