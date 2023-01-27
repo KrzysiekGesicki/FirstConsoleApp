@@ -18,7 +18,7 @@ namespace FirstConsoleApp
 
             /*komentarz dlugi
             */
-            /*
+            
             Console.WriteLine(name1);
 
             Console.WriteLine("Imie nr 1 to: {0}", name1);
@@ -90,6 +90,19 @@ namespace FirstConsoleApp
             Console.WriteLine(songLyrics.StartsWith("You"));
             Console.WriteLine(songLyrics.EndsWith("hello"));
             Console.ReadLine();
+
+            //// more on strings
+
+            int L=songLyrics.Length; //returns length
+            L=songLyrics.IndexOf(" "); // returns index
+            string text1 = songLyrics.Insert(0, "new song: "); 
+            string text2 = songLyrics.Replace("say", "scream");
+            bool text3 = songLyrics.Contains("goodbye");
+            string text4 = songLyrics.Remove(0,5);
+            string text5 = songLyrics.Substring(3,7);
+
+
+
 
             //-----LICZBY
             int max = int.MaxValue;
@@ -192,12 +205,13 @@ namespace FirstConsoleApp
             }
                 
             Console.ReadLine();
-            */
-
-            var a;
+           
+            /*
+            var a; ---> trzeba inicjalizowac od razu
             a = 1;
             Console.WriteLine(a);
             Console.ReadLine();
+            */
 
 
         }
